@@ -1,5 +1,7 @@
 const fs= require('fs');
 const path = require('path');
+const {v4: uuidv4 } = require('uuid');
+
 
 module.exports = app => {
 
@@ -19,7 +21,12 @@ module.exports = app => {
 
         //Set up the /api/notes post routes
         app.post('/api/notes', function(req, res) {
-            let newNote = req.body;
+            let newNote = {
+                id: uuidv4(),
+                title: req.body.title,
+                text: req.body.text
+            };                      
+            console.log(notes);
             notes.push(newNote);
             updateDb();
             return console.log("Added new note: " + newNote.title)
@@ -32,7 +39,10 @@ module.exports = app => {
 
         //Delete a note with specific id
         app.delete('/api/notes/:id', function(req, res) {
-            notes.slice(req.params.id, 1);
+            console.log(req.params.id);
+            notes = notes.filter(note => {
+                note.id !== req.params.id
+            });
             updateDb();
             console.log("Deleted note with id: " + req.params.id)
         })
