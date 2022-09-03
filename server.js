@@ -1,5 +1,8 @@
 //Require express 
 const express = require("express");
+const fs = require("fs");
+const path = require('path');
+
 
 //Use expess to initalize the 'app' server
 const app = express()
