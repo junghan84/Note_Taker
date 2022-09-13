@@ -1,13 +1,19 @@
 # Unit 11: Note Taker
+
 ## Description
 This simple note taking application allows you to save notes with a title and plain text. Using ExpressJS,this app create text file and deleting notes.
 
 ## Table of Contents
 
+- [Description](#description)
 - [User Story](#user-story)
 - [Acceptance Criteria](#acceptance-criteria)
+- [Using](#Using)
 - [Screenshot](#screenshot)
-- [Video](#video)
+- [Deployed link](#Deployed-link)
+- [Repo link](#Repo-link)
+- [Video](#Video)
+- [Authors](#Authors)
 
 # User Story
 
@@ -32,14 +38,32 @@ THEN that note appears in the right-hand column
 WHEN I click on the Write icon in the navigation at the top of the page
 THEN I am presented with empty fields to enter a new note title and the note’s text in the right-hand column
 ```
+## Using
+
+* HTML
+* CSS
+* Javascript
+* JSON.
+* Express.js
+
+
 ## Screenshot
 
 screenshot for generate HTML webpages
 
-![Note Taker Screenshot] (screenshot.jpeg) 
+![screenshot](./public/assets/images/NoteTakerScreenShot.png) 
 
-## Deployed link
+## Deployed-link
 
-![Note Taker App] (https://drive.google.com/file/d/1CO4TfmxIbAF89L4Y3TEJqE-JKNVez4n8/view) 
+![Note Taker](at https://github.com/junghan84/Note_Tracker) 
+
+## Repo-link
+
+![Note Taker](at https://junghan84.github.io/Note_Taker/ ) 
+
+## Video
+
+![Note Taker Video](https://drive.google.com/file/d/1kdZ4uFPEot07F3puXEnKbRlbPrye7O6u/view)
 
 ## Authors
+JungHan Seo

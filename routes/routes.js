@@ -22,7 +22,7 @@ module.exports = app => {
                 if(err){
                     throw err
                 };
-                res.json(data);
+                res.send(data);
             })
             //read the db.json file and return all save notes
             //res.json(notes);
@@ -51,7 +51,7 @@ module.exports = app => {
         app.delete('/api/notes/:id', function(req, res) {
             console.log(req.params.id);
             notes = notes.filter(note => {
-                note.id !== req.params.id
+                return note.id !== req.params.id
             });
             updateDb();
             console.log("Deleted note with id: " + req.params.id)
